@@ -2,7 +2,7 @@
 
 # 🚀 Project: Base de Datos I
 
-Developer: [Edimerk Santos]  
+Developer: Edimerk Santos  
 Src Directory: /src/GitHub/Doc-UP-Edimerk/BDI-GB-ZOO 📂  
 Created: 23-Octubre-2024 🗓️  
 Last Updated: October 2024 ✨  
