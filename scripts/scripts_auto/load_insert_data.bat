@@ -3,29 +3,29 @@ chcp 65001
 setlocal
 
 :: Configura las variables de conexión
-set "PGHOST=*******"
-set "PGPORT=****"
-set "PGUSER=*******"
-set "PGPASSWORD=*******"
-set "PGDATABASE=******"
+set "PGHOST=localhost"
+set "PGPORT=5432"
+set "PGUSER=adminzoo"
+set "PGPASSWORD=samerk070"
+set "PGDATABASE=zoologico"
 
 :: Ejecuta cada archivo SQL en orden
 echo Ejecutando 01_separate_tables.sql...
-psql -h %PGHOST% -p %PGPORT% -U %PGUSER% -d %PGDATABASE% -f "C:\Users\PERSONAL\Documents\GitHub - Projects\Doc-UP-AlejandroJaimes\BDI-GB-ZOO\scripts\dml\insert\01_separate_tables.sql"
+psql -h %PGHOST% -p %PGPORT% -U %PGUSER% -d %PGDATABASE% -f "C:\Users\Asus\Desktop\Git\GitHub\Doc-UP-Edimerk\BDI-GB-ZOO\scripts\dml\insert\01_separate_tables.sql"
 if %errorlevel% neq 0 (
     echo Error ejecutando 01_separate_tables.sql
     exit /b %errorlevel%
 )
 
 echo Ejecutando 02_visitantes.sql...
-psql -h %PGHOST% -p %PGPORT% -U %PGUSER% -d %PGDATABASE% -f "C:\Users\PERSONAL\Documents\GitHub - Projects\Doc-UP-AlejandroJaimes\BDI-GB-ZOO\scripts\dml\insert\02_visitantes.sql"
+psql -h %PGHOST% -p %PGPORT% -U %PGUSER% -d %PGDATABASE% -f "C:\Users\Asus\Desktop\Git\GitHub\Doc-UP-Edimerk\BDI-GB-ZOO\scripts\dml\insert\02_visitantes.sql"
 if %errorlevel% neq 0 (
     echo Error ejecutando 02_visitantes.sql
     exit /b %errorlevel%
 )
 
 echo Ejecutando 03_habitat.sql...
-psql -h %PGHOST% -p %PGPORT% -U %PGUSER% -d %PGDATABASE% -f "C:\Users\PERSONAL\Documents\GitHub - Projects\Doc-UP-AlejandroJaimes\BDI-GB-ZOO\scripts\dml\insert\03_habitat.sql"
+psql -h %PGHOST% -p %PGPORT% -U %PGUSER% -d %PGDATABASE% -f "C:\Users\Asus\Desktop\Git\GitHub\Doc-UP-Edimerk\BDI-GB-ZOO\scripts\dml\insert\03_habitat.sql"
 if %errorlevel% neq 0 (
     echo Error ejecutando 03_habitat.sql
     exit /b %errorlevel%
