@@ -6,7 +6,7 @@ setlocal
 set "PGHOST=localhost"
 set "PGPORT=5432"
 set "PGUSER=adminzoo"
-set "PGPASSWORD=samerk070"
+set "PGPASSWORD=samerk"
 set "PGDATABASE=zoologico"
 
 :: Configura el directorio de backups
